@@ -1,6 +1,8 @@
 "use client"
 import React from 'react';
 import { Menu, X,Terminal, Code, Cpu, Network } from 'lucide-react';
+import Link from 'next/link';
+import MessageButton from './MessageButton';
 
 // Techy dark theme colors
 const techColors = {
@@ -40,26 +42,22 @@ const Navbar = () => {
           
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <a href="#home" className="text-white hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-all relative group">
+              <Link href={"/"} className="text-white hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-all relative group">
                 Home
                 <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-cyan-400 to-purple-500 scale-x-0 group-hover:scale-x-100 transition-transform"></span>
-              </a>
-              <a href="#features" className="text-gray-300 hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-all relative group">
-                Features
+              </Link>
+                <Link href={"/eagle-iptv-subscription"} className="text-white hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-all relative group">
+                Get Subscription
                 <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-cyan-400 to-purple-500 scale-x-0 group-hover:scale-x-100 transition-transform"></span>
-              </a>
-            
-              <a href="#support" className="text-gray-300 hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-all relative group">
-                Support
+              </Link>
+              <Link href={"/eagle-iptv-reselling-benifits"} className="text-gray-300 hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-all relative group">
+                Benefits of Reslling
                 <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-cyan-400 to-purple-500 scale-x-0 group-hover:scale-x-100 transition-transform"></span>
-              </a>
-              <button className="text-black px-6 py-2 rounded-xl text-sm font-bold transition-all transform hover:scale-105 shadow-lg border" style={{ 
-                background: `linear-gradient(135deg, ${techColors.accent}, ${techColors.blue})`,
-                boxShadow: `0 0 20px ${techColors.accent}40`,
-                borderColor: techColors.accent
-              }}>
-                Get Started
-              </button>
+              </Link>
+              <MessageButton text='Start Reselling' message={"I want to start reselling with Eagle IPTV"} className="text-black px-6 py-2 rounded-xl text-sm font-bold transition-all transform hover:scale-105 shadow-lg border"
+              />
+               
+              
             </div>
           </div>
           
@@ -76,15 +74,14 @@ const Navbar = () => {
         {isOpen && (
           <div className="md:hidden pb-4">
             <div className="flex flex-col space-y-2">
-              <a href="#home" className="text-white hover:text-cyan-400 px-3 py-2 text-sm font-medium">Home</a>
-              <a href="#features" className="text-gray-300 hover:text-cyan-400 px-3 py-2 text-sm font-medium">Features</a>
+              <Link href={"/"} className="text-white hover:text-cyan-400 px-3 py-2 text-sm font-medium">Home</Link>
+              <Link href={""} className="text-gray-300 hover:text-cyan-400 px-3 py-2 text-sm font-medium">Get Subscription</Link>
    
               <a href="#support" className="text-gray-300 hover:text-cyan-400 px-3 py-2 text-sm font-medium">Support</a>
-              <button className="text-black px-6 py-2 rounded-xl text-sm font-bold mt-2 w-full" style={{ 
+              <MessageButton text='Start Reselling' message={"I want to start reselling with Eagle IPTV"} className="text-black px-6 py-2 rounded-xl text-sm font-bold mt-2 w-full" style={{ 
                 background: `linear-gradient(135deg, ${techColors.accent}, ${techColors.blue})`
-              }}>
-                Get Started
-              </button>
+              }}/>
+               
             </div>
           </div>
         )}
