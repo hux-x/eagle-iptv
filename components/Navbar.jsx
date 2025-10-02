@@ -77,7 +77,7 @@ const Navbar = () => {
               <Link href={"/"} className="text-white hover:text-cyan-400 px-3 py-2 text-sm font-medium">Home</Link>
               <Link href={""} className="text-gray-300 hover:text-cyan-400 px-3 py-2 text-sm font-medium">Get Subscription</Link>
    
-              <a href="#support" className="text-gray-300 hover:text-cyan-400 px-3 py-2 text-sm font-medium">Support</a>
+              <Link href={"/eagle-iptv-reselling-benifits"} className="text-gray-300 hover:text-cyan-400 px-3 py-2 text-sm font-medium">Benefits of Reselling</Link>
               <MessageButton text='Start Reselling' message={"I want to start reselling with Eagle IPTV"} className="text-black px-6 py-2 rounded-xl text-sm font-bold mt-2 w-full" style={{ 
                 background: `linear-gradient(135deg, ${techColors.accent}, ${techColors.blue})`
               }}/>
