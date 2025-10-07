@@ -57,15 +57,20 @@ const HeroSection = () => {
               </span>
               <br />
               <span className="bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-                IPTV Reseller Program 
+                IPTV Reseller Panel & Server Program
               </span>
             </h1>
 
             <p className="text-xl mb-10 leading-relaxed max-w-2xl text-gray-300">
-              Launch your <strong>IPTV business</strong> with Eagle IPTV — a trusted <strong>IPTV supplier</strong> and <strong>quality IPTV provider</strong>. 
-              Get <strong>reseller accounts</strong>, <strong>subscription reselling</strong>, <strong>bulk credits</strong>, and enjoy 
-              <strong> high profit margins up to 200%</strong>. Manage <strong>unlimited clients</strong> with instant <strong>panel access</strong>,
-              and rely on our <strong>stable IPTV connections</strong>, <strong>premium infrastructure</strong>, and <strong>24/7 dedicated support</strong> via WhatsApp, Telegram, and live chat.
+              Join the <strong>best IPTV reseller program</strong> with <strong>Eagle IPTV</strong> — a 
+              <strong> global IPTV provider</strong> and trusted <strong>IPTV supplier</strong> offering <strong>HD & 4K IPTV streaming</strong>, 
+              <strong> reseller panels</strong>, and <strong>unlimited IPTV accounts</strong>.  
+              Get <strong>bulk credits</strong>, <strong>subscription plans</strong>, and <strong>reseller pricing</strong> with 
+              <strong> high profit margins up to 200%</strong>.  
+              Manage <strong>unlimited clients</strong> through our <strong>IPTV panel</strong> and experience <strong>stable IPTV connections</strong>, 
+              <strong> premium servers</strong>, and <strong>24/7 support</strong> via WhatsApp, Telegram, and live chat.  
+              Whether you're launching an <strong>IPTV business</strong> or expanding as an <strong>IPTV reseller</strong>, 
+              Eagle IPTV delivers reliability, scalability, and performance.
             </p>
 
             {/* Key Highlights */}
@@ -73,12 +78,12 @@ const HeroSection = () => {
               <div className="text-center p-4 rounded-xl border border-gray-700" style={{ backgroundColor: `${techColors.darkCard}80` }}>
                 <DollarSign className="w-8 h-8 mx-auto mb-2 text-cyan-400" />
                 <div className="font-bold text-lg text-cyan-400">200% Profit</div>
-                <div className="text-sm text-gray-400">High Margins</div>
+                <div className="text-sm text-gray-400">High Reseller Margins</div>
               </div>
               <div className="text-center p-4 rounded-xl border border-gray-700" style={{ backgroundColor: `${techColors.darkCard}80` }}>
                 <Users className="w-8 h-8 mx-auto mb-2 text-purple-400" />
                 <div className="font-bold text-lg text-purple-400">∞ Clients</div>
-                <div className="text-sm text-gray-400">Unlimited Accounts</div>
+                <div className="text-sm text-gray-400">Unlimited IPTV Accounts</div>
               </div>
               <div className="text-center p-4 rounded-xl border border-gray-700" style={{ backgroundColor: `${techColors.darkCard}80` }}>
                 <Shield className="w-8 h-8 mx-auto mb-2 text-pink-400" />
@@ -87,15 +92,15 @@ const HeroSection = () => {
               </div>
               <div className="text-center p-4 rounded-xl border border-gray-700" style={{ backgroundColor: `${techColors.darkCard}80` }}>
                 <Zap className="w-8 h-8 mx-auto mb-2 text-orange-400" />
-                <div className="font-bold text-lg text-orange-400">Instant</div>
-                <div className="text-sm text-gray-400">Reseller Panel Access</div>
+                <div className="font-bold text-lg text-orange-400">Instant Access</div>
+                <div className="text-sm text-gray-400">IPTV Reseller Panel Login</div>
               </div>
             </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
-              href='#pricing'
+                href="#pricing"
                 className="group text-black px-10 py-4 rounded-2xl text-lg font-bold transition-all transform hover:scale-105 shadow-2xl border"
                 style={{
                   background: `linear-gradient(135deg, ${techColors.accent}, ${techColors.blue})`,
@@ -104,17 +109,16 @@ const HeroSection = () => {
                 }}
               >
                 🚀 Start Your IPTV Business
-           
               </a>
               <Link
-                href={'/eagle-iptv-reselling-benifits'}
+                href="/eagle-iptv-reselling-benifits"
                 className="border-2 px-10 py-4 rounded-2xl text-lg font-bold transition-all hover:bg-gray-800 text-white"
                 style={{
                   borderColor: `${techColors.purple}80`,
                   backgroundColor: `${techColors.darkCard}60`,
                 }}
               >
-                Benifits of Reselling with Eagle IPTV
+                Benefits of Eagle IPTV Reseller Program
               </Link>
             </div>
           </div>
@@ -133,14 +137,14 @@ const HeroSection = () => {
                 Why Choose Eagle IPTV Reseller Program?
               </h3>
               <ul className="space-y-4 text-gray-300 text-lg">
-                <li>✅ IPTV reseller plans & pricing flexibility</li>
-                <li>✅ Direct IPTV reseller account & panel</li>
-                <li>✅ Bulk credits, volume discounts, easy management</li>
+                <li>✅ Flexible IPTV reseller pricing plans</li>
+                <li>✅ Direct IPTV panel and instant reseller account</li>
+                <li>✅ Bulk credits and volume discounts</li>
                 <li>✅ Set your own retail prices</li>
-                <li>✅ Manage unlimited clients & subscriptions</li>
-                <li>✅ Stable IPTV connections & high uptime</li>
-                <li>✅ Reliable IPTV service & premium infrastructure</li>
-                <li>✅ 24/7 support via WhatsApp, Telegram, Live Chat</li>
+                <li>✅ Manage unlimited IPTV clients easily</li>
+                <li>✅ Stable servers with high uptime and smooth streaming</li>
+                <li>✅ Access HD & 4K live channels worldwide</li>
+                <li>✅ 24/7 support via WhatsApp, Telegram & live chat</li>
               </ul>
             </div>
           </div>
