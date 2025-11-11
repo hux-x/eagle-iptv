@@ -10,6 +10,7 @@ import {
   CheckCircle,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
+import Link from "next/link";
 
 // ✅ SEO Metadata
 export const metadata = {
@@ -82,24 +83,7 @@ const BenefitsPage = () => {
           <h1 className="text-5xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
             Benefits of Reselling with Eagle IPTV
           </h1>
-          <p className="text-xl text-gray-300 mb-10 leading-relaxed">
-            Join the <strong>Eagle IPTV Reseller Program</strong> and unlock{" "}
-            <strong>high profit margins</strong>,{" "}
-            <strong>unlimited IPTV clients</strong>, and{" "}
-            <strong>24/7 dedicated support</strong>. Partner with a trusted{" "}
-            <strong>IPTV supplier</strong> and build your own successful{" "}
-            <strong>IPTV business</strong>.
-          </p>
-          <a
-            href="#join"
-            className="px-10 py-4 text-lg font-bold rounded-2xl shadow-lg transition-transform hover:scale-105"
-            style={{
-              background: `linear-gradient(135deg, ${techColors.accent}, ${techColors.blue})`,
-              color: techColors.dark,
-            }}
-          >
-            🚀 Start Reselling IPTV Today
-          </a>
+    
         </div>
       </header>
 
@@ -280,8 +264,8 @@ const BenefitsPage = () => {
           access, unlimited client management, and high-margin reselling
           opportunities with 24/7 support.
         </p>
-        <a
-          href="#contact"
+        <Link
+          href={"/"}
           className="px-12 py-5 rounded-2xl font-bold text-lg shadow-xl transition-transform hover:scale-105"
           style={{
             background: `linear-gradient(135deg, ${techColors.accent}, ${techColors.blue})`,
@@ -289,8 +273,10 @@ const BenefitsPage = () => {
           }}
         >
           🚀 Join Eagle IPTV Reseller Program
-        </a>
+        </Link>
+        
       </footer>
+
     </main>
   );
 };
