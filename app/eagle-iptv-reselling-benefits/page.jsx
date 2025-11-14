@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
+import Footer from "@/components/Footer";
 
 // ✅ SEO Metadata
 export const metadata = {
@@ -249,7 +250,7 @@ const BenefitsPage = () => {
       </section>
 
       {/* CTA */}
-      <footer
+      <div
         id="join"
         className="py-16 text-center"
         style={{
@@ -275,7 +276,8 @@ const BenefitsPage = () => {
           🚀 Join Eagle IPTV Reseller Program
         </Link>
         
-      </footer>
+      </div>
+      <Footer/>
 
     </main>
   );

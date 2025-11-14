@@ -175,12 +175,7 @@ export default function EagleIPTVHero() {
       {/* FAQs */}
       <FAQs />
 
-      {/* Footer */}
-      <footer className="border-t border-gray-800 py-10 text-center">
-        <p className="text-gray-500 text-sm">
-          © 2024 Nexon IPTV — Stability. Quality. Support. Always.
-        </p>
-      </footer>
+    
     </div>
   );
 }

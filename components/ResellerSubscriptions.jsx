@@ -1,5 +1,6 @@
 import React from 'react';
 import {  MessageCircle, Terminal, Network, Cpu, DollarSign, Users, Shield, Zap, CheckCircle,Globe,Star } from 'lucide-react';
+import MessageButton from './MessageButton';
 
 // Techy dark theme colors
 const techColors = {
@@ -19,7 +20,7 @@ const techColors = {
 const SubscriptionSection = () => {
   const plans = [
     {
-      name: "Starter Protocol",
+      name: "Starter Plan",
       price: "$99",
       period: "100 Credits",
       features: [
@@ -35,7 +36,7 @@ const SubscriptionSection = () => {
       icon: <Terminal className="w-6 h-6" />
     },
     {
-      name: "Business Matrix",
+      name: "Business Plan",
       price: "$299", 
       period: "500 Credits",
       features: [
@@ -52,17 +53,16 @@ const SubscriptionSection = () => {
       icon: <Cpu className="w-6 h-6" />
     },
     {
-      name: "Enterprise Node",
+      name: "Enterprise Plan",
       price: "$799",
       period: "2000 Credits",
       features: [
-        "Premium Node Access",
+        "Premium Eagle Reseller Panel Access",
         "2000 Credits Preload",
         "24/7 Dedicated Channel",
         "Up to 200% ROI",
         "All Payment Gateways",
         "White-label System",
-        "Full API Access",
         "Transparent pricing with unlimited scalability"
       ],
       popular: false,
@@ -204,14 +204,9 @@ const SubscriptionSection = () => {
                 ))}
               </ul>
 
-              <button className="w-full py-4 px-6 rounded-2xl font-bold transition-all transform hover:scale-105 border"
-                style={{
-                  background: plan.popular ? `linear-gradient(135deg, ${techColors.accent}, ${techColors.purple})` : `${techColors.gray}60`,
-                  color: plan.popular ? techColors.dark : techColors.white,
-                  borderColor: plan.popular ? techColors.accent : techColors.lightGray
-                }}>
-                {plan.buttonText}
-              </button>
+              <MessageButton text="Get Now" message={`I would like to buy Eagle iptv ${plan.name}`}  className="w-full py-4 px-6 rounded-2xl font-bold transition-all transform hover:scale-105 border"
+          />
+              
             </div>
           ))}
         </div>

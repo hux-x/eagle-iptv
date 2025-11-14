@@ -111,7 +111,7 @@ const HeroSection = () => {
                 🚀 Start Your IPTV Business
               </a>
               <Link
-                href="/eagle-iptv-reselling-benifits"
+                href="/eagle-iptv-reselling-benefits"
                 className="border-2 px-10 py-4 rounded-2xl text-lg font-bold transition-all hover:bg-gray-800 text-white"
                 style={{
                   borderColor: `${techColors.purple}80`,
