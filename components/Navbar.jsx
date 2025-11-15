@@ -72,7 +72,7 @@ const Navbar = () => {
           <div className="md:hidden pb-4">
             <div className="flex flex-col space-y-2">
               <Link href={"/"} className="text-white hover:text-cyan-400 px-3 py-2 text-sm font-medium">Home</Link>
-              <Link href={""} className="text-gray-300 hover:text-cyan-400 px-3 py-2 text-sm font-medium">Get Subscription</Link>
+              <Link href={"/eagle-iptv-subscription"} className="text-gray-300 hover:text-cyan-400 px-3 py-2 text-sm font-medium">Get Subscription</Link>
    
               <Link href={"/eagle-iptv-reselling-benefits"} className="text-gray-300 hover:text-cyan-400 px-3 py-2 text-sm font-medium">Benefits of Reselling</Link>
               <MessageButton text='Start Reselling' message={"I want to start reselling with Eagle IPTV"} className="text-black px-6 py-2 rounded-xl text-sm font-bold mt-2 w-full" style={{ 
