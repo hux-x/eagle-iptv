@@ -273,7 +273,7 @@ const BenefitsPage = () => {
             color: techColors.dark,
           }}
         >
-          🚀 Join Eagle IPTV Reseller Program
+          🚀 Start Reselling
         </Link>
         
       </div>
