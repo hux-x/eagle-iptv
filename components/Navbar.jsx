@@ -28,12 +28,9 @@ const Navbar = () => {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
-              <div className="w-10 h-10 rounded-xl flex items-center justify-center mr-3 shadow-lg border border-gray-700" style={{ 
-                background: `linear-gradient(135deg, ${techColors.accent}, ${techColors.purple})`,
-                boxShadow: `0 0 20px ${techColors.accent}40`
-              }}>
-               
-              </div>
+              <img className="w-10 h-10 rounded-xl flex items-center justify-center mr-3 shadow-lg border border-gray-700" src='/logo.ico'
+              />
+          
               <span className="text-2xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
                 Eagle IPTV
               </span>
