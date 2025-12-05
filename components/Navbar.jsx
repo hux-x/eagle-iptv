@@ -51,6 +51,10 @@ const Navbar = () => {
                 Benefits of Reslling
                 <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-cyan-400 to-purple-500 scale-x-0 group-hover:scale-x-100 transition-transform"></span>
               </Link>
+              <Link href={"/blogs"} className="text-gray-300 hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-all relative group">
+                Blogs
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-cyan-400 to-purple-500 scale-x-0 group-hover:scale-x-100 transition-transform"></span>
+              </Link>
               <MessageButton text='Start Reselling' message={"I want to start reselling with Eagle IPTV"} className="text-black px-6 py-2 rounded-xl text-sm font-bold transition-all transform hover:scale-105 shadow-lg border"
               />
                
@@ -75,6 +79,7 @@ const Navbar = () => {
               <Link href={"/eagle-iptv-subscription"} className="text-gray-300 hover:text-cyan-400 px-3 py-2 text-sm font-medium">Get Subscription</Link>
    
               <Link href={"/eagle-iptv-reselling-benefits"} className="text-gray-300 hover:text-cyan-400 px-3 py-2 text-sm font-medium">Benefits of Reselling</Link>
+              <Link href={"/blogs"} className="text-gray-300 hover:text-cyan-400 px-3 py-2 text-sm font-medium">Blogs</Link>
               <MessageButton text='Start Reselling' message={"I want to start reselling with Eagle IPTV"} className="text-black px-6 py-2 rounded-xl text-sm font-bold mt-2 w-full" style={{ 
                 background: `linear-gradient(135deg, ${techColors.accent}, ${techColors.blue})`
               }}/>
