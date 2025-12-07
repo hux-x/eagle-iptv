@@ -74,12 +74,27 @@ const BlogPost = ({ post }) => {
             )}
           </header>
 
+          {/* BLOG CONTENT (FULL WHITE TEXT) */}
           <div className="bg-gray-800 rounded-xl shadow-lg p-8 md:p-12 border border-gray-700">
-            <div 
-  className="prose prose-lg max-w-none prose-invert prose-p:text-gray-300 prose-strong:text-white prose-a:text-blue-400 prose-a:hover:text-blue-300
-  [&_h1]:text-white [&_h2]:text-white [&_h3]:text-white [&_h4]:text-white [&_h5]:text-white [&_h6]:text-white"
-  dangerouslySetInnerHTML={{ __html: post.content }}
-/>
+            <div
+              className="
+                prose prose-lg max-w-none prose-invert
+                [&_*]:text-white 
+                prose-a:text-blue-400 prose-a:hover:text-blue-300
+                [&_strong]:text-white 
+                [&_em]:text-white 
+                [&_p]:text-white 
+                [&_li]:text-white 
+                [&_span]:text-white 
+                [&_blockquote]:text-white 
+                [&_h1]:text-white [&_h2]:text-white [&_h3]:text-white 
+                [&_h4]:text-white [&_h5]:text-white [&_h6]:text-white
+              "
+              style={{
+                color: "white", // HARD OVERRIDE for inline HTML colors
+              }}
+              dangerouslySetInnerHTML={{ __html: post.content }}
+            />
           </div>
 
           <div className="mt-12 text-center">
