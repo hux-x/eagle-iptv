@@ -41,7 +41,7 @@ const BlogPost = ({ post }) => {
 
           <header className="mb-8">
             <div className="relative w-full h-64 md:h-96 mb-8 rounded-xl overflow-hidden">
-              <Image
+              <img
                 src={post.image}
                 alt={post.title}
                 fill
